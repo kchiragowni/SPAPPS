@@ -10,8 +10,6 @@ import { Provider } from 'react-redux';
 import './styles/styles.scss';
 
 // globals.scss
-import '../node_modules/office-ui-fabric-react/dist/sass/Fabric.Typography.Fonts.Output.scss';
-import '../node_modules/office-ui-fabric-react/dist/sass/Fabric.Icons.Font.Output.scss';
 
 import routes from './routes';
 import { loadContacts } from './actions/contactActions';
