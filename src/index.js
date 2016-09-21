@@ -1,5 +1,3 @@
-// Set up your application entry point here...
-
 /* eslint-disable import/default */
 import React from 'react';
 import { render } from 'react-dom';
@@ -8,8 +6,6 @@ import { Router, browserHistory } from 'react-router';
 import { Provider } from 'react-redux';
 
 import './styles/styles.scss';
-
-// globals.scss
 
 import routes from './routes';
 import { loadContacts } from './actions/contactActions';
