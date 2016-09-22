@@ -37,11 +37,7 @@ export function loadSPContacts(){
                   baseURL: 'https://devkitchen1.sharepoint.com/sites/dev/_api/',
                   headers: {
                     accept: "application/json;odata=verbose"
-                  },
-                  auth: {
-                    username: 'kiran@devkitchen1.onmicrosoft.com',
-                    password: 'Mahendra12*'
-                  },
+                  }
                 })
       .then(contacts => contacts.data.value)
       .then(contacts => {
