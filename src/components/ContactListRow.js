@@ -3,7 +3,7 @@ import React, { PropTypes } from 'react';
 const ContactListRow = ({contact}) => {
     return (
         <tr>
-            <td>{contact.firstName}</td>
+            <td>{contact.nedu}</td>
         </tr>
     );
 };
