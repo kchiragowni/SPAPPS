@@ -10,8 +10,8 @@ import NotFoundPage from './components/NotFoundPages';
 export default (
     <Route path="/" component={App}>
         <IndexRoute component={HomePage} />
-        <Route path="/about" component={AboutPage} />
-        <Route path="/contacts" component={ContactsPage} />
+        <Route path="about" component={AboutPage} />
+        <Route path="contacts" component={ContactsPage} />
         <Route path="*" component={NotFoundPage} />
     </Route>
 );

@@ -16,7 +16,8 @@ browserSync({
     port: 3001
   },
   server: {
-    baseDir: 'dist'
+    baseDir: 'dist',
+    https: true
   },
 
   files: [

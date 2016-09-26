@@ -5,13 +5,13 @@ import configureStore from './store/configureStore';
 import { Router, browserHistory } from 'react-router';
 import { Provider } from 'react-redux';
 
-import './styles/styles.scss';
+//import './styles/styles.scss';
 
 import routes from './routes';
-import { loadContacts } from './actions/contactActions';
+import { loadSPContacts } from './actions/contactActions';
 
 const store = configureStore();
-store.dispatch(loadContacts());
+store.dispatch(loadSPContacts());
 
 render(
     <Provider store={store}>    

@@ -5,7 +5,7 @@ class AboutPage extends React.Component {
         super(props);
     }
 
-    sayHi(event) {
+    sayHi() {
         alert(`Hi ${this.props.name}`);
     }
 
