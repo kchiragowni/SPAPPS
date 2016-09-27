@@ -9,7 +9,7 @@ const ContactsList = ({contacts}) => {
             <table className="ms-Table">
                 <tbody>
                     {contacts.map(contact =>
-                        <ContactListRow key={contact.id} contact={contact} />
+                        <ContactListRow key={contact.ID} contact={contact} />
                     )}
                 </tbody>
             </table>
