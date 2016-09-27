@@ -1,4 +1,4 @@
-import pnp from '../lib/pnp.min';
+import pnp from '../lib/pnp';
 
 class SPApi {
     static getRequest(listTitle) {
@@ -10,10 +10,11 @@ class SPApi {
                         }
                     })
                     .then((items) => {
-                        console.log(items);
+                        //console.log(items);
                         return items;
                     })
                     .catch((error) => {
+                        /*eslint-disable no-console*/
                         console.log(error);
                     });
     }

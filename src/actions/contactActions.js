@@ -1,6 +1,6 @@
 import * as types from '../constants/actionTypes';
 import contactApi from '../api/mockContactApi';
-import spApi from '../api/spApi';
+import SPApi from '../api/spApi';
 
 export function fetchContacts() {
   return fetch("/sites/dev/_api/web/lists/GetByTitle('Contacts')/items");
@@ -28,11 +28,12 @@ export function loadContacts() {
 
 export function loadSPContacts(){
   return function(dispatch) {
-    return spApi.getRequest('Contacts')
+    return SPApi.getRequest('Contacts')
             .then((contacts) => {
               dispatch(loadContactsSuccess(contacts));
             })
             .catch((error) => {
+              /*eslint-disable no-console*/
               console.log(error);
             });
   };
